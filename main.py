@@ -12,6 +12,7 @@ for n in numbers:
     else:
         frequency[n] += 1
 for k, v in frequency.items():
-    ordered_frequency.append((k, v))
+    ordered_frequency.append((v, k))
 ordered_frequency.sort(reverse=True)
-print(ordered_frequency)
+print(f'The most common number to appear in this list is number {ordered_frequency[0][1]} which appears '
+      f'{ordered_frequency[0][0]} times')
