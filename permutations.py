@@ -11,8 +11,8 @@ def permutation(string, start, end):
             x[current] = temp
 
             # Recursively calling function permutation() for rest of the characters.
-            # Every permutation loops "n" times until it is printed. Then it goes back to the first for loop and
-            # computes the next permutation and repeats the process.
+            # Every permutation loops "n" times (start increases by 1) until it is printed. Then it goes back to the
+            # first for loop and computes the next permutation (current increases by 1) and repeats the process.
             permutation("".join(x), start + 1, end)
 
 
